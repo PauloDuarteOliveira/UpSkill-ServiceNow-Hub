@@ -15,36 +15,38 @@
         <!-- HEADER LADO ESQUERDO -->
         <div class="header-esquerda">
             <div class="logo-area">
-                <img src="assets/Logo-Hub.png" alt="Logo UpSkill ServiceNow Hub">
+                <img class="logo-hub" src="assets/Logo-Hub.png" alt="Logo UpSkill ServiceNow Hub">
                 <span class="badge-trainee">IT CONSULTANT TRAINEE TRACK</span>
 
             </div>
         </div>
         <!-- HEADER LADO DIREITO -->
         <div class="header-direita">
-            <div>
-                <i class="material-icons-outlined search">search</i>
-                <input type="text" placeholder="Pesquisar módulos, lições, documentação...">
+            <div class="header-direita-elementos">
+                <div class="barra-pesquisa">
+                    <i class="material-icons-outlined search">search</i>
+                    <input type="text" placeholder="Pesquisar módulos, lições, documentação...">
+                </div>
+                <button class="icon-notificacao">
+                    <i class="material-icons-outlined notifications">
+                        notifications
+                    </i>
+                </button>
+                <button class="icon-dark-light-mode">
+                    <i class="material-icons-outlined bedtime">
+                        bedtime
+                    </i>
+                </button>
             </div>
-            <button class="icon-notificacao">
-                <i class="material-icons-outlined notifications">
-                    notifications
-                </i>
-            </button>
-            <button class="icon-dark-light-mode">
-                <i class="material-icons-outlined bedtime">
-                    bedtime
-                </i>
-            </button>
 
-            <!-- Avatar com Dropdown ativado por CSS -->
             <div class="perfil-dropdown" tabindex="0">
                 <img src="assets/foto.png" alt="Foto de Perfil" class="avatar-header">
                 <ul>
                     <li><a href="#"><i class="material-icons-outlined person">person</i> O Meu Perfil</a></li>
                     <li><a href="#"><i class="material-icons-outlined settings">settings</i> Defenições</a></li>
                     <li class="separador"></li>
-                    <li><a href="#"><i class="material-icons-outlined door-back">door_back</i> Terminar sessão</a></li>
+                    <li><a href="#"><i class="material-icons-outlined door-back">door_back</i> Terminar sessão</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -200,12 +202,14 @@
                     <!-- 6 - ServiceNow -->
                     <article class="card modulo-pausado">
                         <div class="card-topo"><span>MOD-06</span> <span class="badge badge-pausa">
-                            <i class="material-icons-outlined pause-circle">pause_circle</i> Pausado / A aguardar Fase 2</span>
+                                <i class="material-icons-outlined pause-circle">pause_circle</i> Pausado / A aguardar
+                                Fase 2</span>
                         </div>
                         <h3>Introdução ao ServiceNow</h3>
                         <p>Visão global da Now Platform, navegação na interface Polaris, Listas, Formulários e CMDB.</p>
                         <div class="info-pausa">
-                            <p><i class="material-icons-outlined info">info</i> Módulo intercalar: desbloqueia a 2ª fase após conclusão de Laboratórios Práticos
+                            <p><i class="material-icons-outlined info">info</i> Módulo intercalar: desbloqueia a 2ª fase
+                                após conclusão de Laboratórios Práticos
                                 (MOD-08).
                             </p>
                         </div>
@@ -229,7 +233,8 @@
                 <div class="grid-cards">
                     <!-- 7 - Integração de Processos -->
                     <article class="card modulo-bloqueado">
-                        <div class="card-topo"><span>MOD-07</span> <span class="badge badge-bloqueado"><i class="material-icons-outlined lock">lock</i>
+                        <div class="card-topo"><span>MOD-07</span> <span class="badge badge-bloqueado"><i
+                                    class="material-icons-outlined lock">lock</i>
                                 Bloqueado</span>
                         </div>
                         <h3>Integração de Processos</h3>
@@ -243,7 +248,8 @@
 
                     <!-- 8 - Laboratórios Práticos -->
                     <article class="card modulo-bloqueado">
-                        <div class="card-topo"><span>MOD-08</span> <span class="badge badge-bloqueado"><i class="material-icons-outlined lock">lock</i>
+                        <div class="card-topo"><span>MOD-08</span> <span class="badge badge-bloqueado"><i
+                                    class="material-icons-outlined lock">lock</i>
                                 Bloqueado</span>
                         </div>
                         <h3>Laboratórios Práticos</h3>
@@ -256,7 +262,8 @@
 
                     <!-- Card 9 -->
                     <article class="card modulo-bloqueado">
-                        <div class="card-topo"><span>MOD-09</span> <span class="badge badge-bloqueado"><i class="material-icons-outlined lock">lock</i>
+                        <div class="card-topo"><span>MOD-09</span> <span class="badge badge-bloqueado"><i
+                                    class="material-icons-outlined lock">lock</i>
                                 Bloqueado</span>
                         </div>
                         <h3>Advanced ServiceNow & Custom Apps</h3>
