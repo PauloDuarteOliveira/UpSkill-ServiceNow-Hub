@@ -1,0 +1,53 @@
+/* ==========================================================================
+   1. DESIGN SYSTEM (VARIÁVEIS) & RESET
+   ========================================================================== */
+:root {
+    /* Cores de Identidade (Deloitte & ServiceNow) */
+    --verde-deloitte: #86BC25;
+    --verde-glow: rgba(134, 188, 37, 0.35);
+    --cinza-servicenow: #293E40;
+    
+    /* Paleta de Cores do Layout */
+    --bg-header: #1e293b;        /* Slate escuro corporativo */
+    --bg-sidebar: #0f172a;       /* Slate ultra escuro para a lateral */
+    --bg-main: #f8f9ff;          /* Cinza claro limpo para o fundo */
+    --bg-card: #ffffff;          /* Blanco puro para os cartões */
+    --texto-principal: #334155;
+    --texto-mutado: #64748b;
+    
+    /* Estados dos Módulos */
+    --cor-concluido: #10b981;    
+    --cor-curso: #86BC25;        
+    --cor-pausa: #3b82f6;        
+    --cor-bloqueado: #94a3b8;    
+    
+    /* Estrutura */
+    --fonte-principal: 'Inter', 'Segoe UI', sans-serif;
+    --raio-borda: 10px;
+    --transicao: all 0.3s ease;
+}
+
+/* Reset Técnico Obrigatório (Limpa margens e paddings automáticos) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--bg-main);
+    color: var(--texto-principal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.workspace-conteudo{
+    color: white;
+}
