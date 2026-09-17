@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UpSkill ServiceNow Hub - Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,20 +23,28 @@
         <!-- HEADER LADO DIREITO -->
         <div class="header-direita">
             <div>
-                <span class="search-icon">🔍</span>
+                <i class="material-icons-outlined search">search</i>
                 <input type="text" placeholder="Pesquisar módulos, lições, documentação...">
             </div>
-            <button class="icon-notificacao">🔔</button>
-            <button class="icon-dark-light-mode">🌙</button>
+            <button class="icon-notificacao">
+                <i class="material-icons-outlined notifications">
+                    notifications
+                </i>
+            </button>
+            <button class="icon-dark-light-mode">
+                <i class="material-icons-outlined bedtime">
+                    bedtime
+                </i>
+            </button>
 
             <!-- Avatar com Dropdown ativado por CSS -->
             <div class="perfil-dropdown" tabindex="0">
                 <img src="assets/foto.png" alt="Foto de Perfil" class="avatar-header">
                 <ul>
-                    <li><a href="#">👤 O Meu Perfil</a></li>
-                    <li><a href="#">⚙️ Defenições</a></li>
+                    <li><a href="#"><i class="material-icons-outlined person">person</i> O Meu Perfil</a></li>
+                    <li><a href="#"><i class="material-icons-outlined settings">settings</i> Defenições</a></li>
                     <li class="separador"></li>
-                    <li><a href="#">🚪 Terminar sessão</a></li>
+                    <li><a href="#"><i class="material-icons-outlined door-back">door_back</i> Terminar sessão</a></li>
                 </ul>
             </div>
         </div>
@@ -52,11 +61,16 @@
             <div class="widget widget-filtros">
                 <h3>FILTRO DE ROADMAP</h3>
                 <ul>
-                    <li class="active"><span>📝 Todos os Módulos</span> <span class="qtd">9</span></li>
-                    <li><span>🟢 Concluídos</span> <span class="qtd">4</span></li>
-                    <li><span>🟡 Em Curso</span> <span class="qtd">1</span></li>
-                    <li><span>🔵 Em Pausa</span> <span class="qtd">1</span></li>
-                    <li><span>🔒 Bloqueados</span> <span class="qtd">3</span></li>
+                    <li class="active"><span><i class="material-icons-outlined view-stream">view_stream</i> Todos os
+                            Módulos</span> <span class="qtd">9</span></li>
+                    <li><span><i class="material-icons-outlined done">done</i> Concluídos</span> <span
+                            class="qtd">4</span></li>
+                    <li><span><i class="material-icons-outlined play-circle">play_circle</i> Em Curso</span> <span
+                            class="qtd">1</span></li>
+                    <li><span><i class="material-icons-outlined pause-circle">pause_circle</i> Em Pausa</span> <span
+                            class="qtd">1</span></li>
+                    <li><span><i class="material-icons-outlined lock">lock</i> Bloqueados</span> <span
+                            class="qtd">3</span></li>
                 </ul>
                 <!-- Widget 3: Prazo Próximo -->
                 <div class="widget widget-prazo">
@@ -87,16 +101,16 @@
 
             <!--Sumário dos módulos-->
             <div class="summary-cards">
-                <div class="s-card"><span class="icon">✔️</span>
+                <div class="s-card"><i class="material-icons-outlined check">check</i>
                     <div><strong>4</strong> Módulos Concluídos</div>
                 </div>
-                <div class="s-card-active"><span class="icon">💻</span>
+                <div class="s-card-active"><i class="material-icons-outlined computer">computer</i>
                     <div><strong>1</strong> Em Curso (JS + DOM)</div>
                 </div>
-                <div class="s-card"><span class="icon">🕒</span>
+                <div class="s-card"><i class="material-icons-outlined schedule">schedule</i>
                     <div><strong>120h</strong> Horas Acumuladas</div>
                 </div>
-                <div class="s-card"><span class="icon">🎓</span>
+                <div class="s-card"><i class="material-icons-outlined school">school</i>
                     <div><strong>Exame CSA</strong> Meta: Q2 2025</div>
                 </div>
             </div>
@@ -111,7 +125,8 @@
                 <div class="grid-cards">
                     <!-- 1 - Competências Base e Pessoais -->
                     <article class="card modulo-concluido">
-                        <div class="card-topo"><span>MOD-01</span> <span class="badge badge-concluido">Concluído</span>
+                        <div class="card-topo"><span>MOD-01</span> <span class="badge badge-concluido">
+                                <i class="material-icons-outlined check">check</i>Concluído</span>
                         </div>
                         <h3>Competências Base e Pessoais</h3>
                         <p>Comunicação técnica para consultoria, metodologias ágeis (Scrum/Kanban) e organização de
@@ -123,7 +138,8 @@
 
                     <!-- 2 - Algoritmia e Programação -->
                     <article class="card modulo-concluido">
-                        <div class="card-topo"><span>MOD-02</span> <span class="badge badge-concluido">Concluído</span>
+                        <div class="card-topo"><span>MOD-02</span> <span class="badge badge-concluido">
+                                <i class="material-icons-outlined check">check</i>Concluído</span>
                         </div>
                         <h3>Algoritmia e Programação</h3>
                         <p>Desenvolvimento de pensamento estruturado, matrizes, pilhas e fluxos lógicos complexos.</p>
@@ -135,7 +151,8 @@
 
                     <!-- 3 - Bases de Dados -->
                     <article class="card modulo-concluido">
-                        <div class="card-topo"><span>MOD-03</span> <span class="badge badge-concluido">Concluído</span>
+                        <div class="card-topo"><span>MOD-03</span> <span class="badge badge-concluido">
+                                <i class="material-icons-outlined check">check</i>Concluído</span>
                         </div>
                         <h3>Bases de Dados</h3>
                         <p>Modelação entidade-relação, queries relacionais complexas, joins e índices em PostgreSQL.</p>
@@ -147,7 +164,8 @@
 
                     <!-- 4 - Iniciação à Programação Funcional -->
                     <article class="card modulo-concluido">
-                        <div class="card-topo"><span>MOD-04</span> <span class="badge badge-concluido">Concluído</span>
+                        <div class="card-topo"><span>MOD-04</span> <span class="badge badge-concluido">
+                                <i class="material-icons-outlined check">check</i>Concluído</span>
                         </div>
                         <h3>Iniciação à Programação Funcional</h3>
                         <p>Funções puras, transformações de coleções com map, filter e reduce, e princípios de
@@ -160,8 +178,10 @@
 
                     <!-- 5 - Programação em JavaScript (EM CURSO) -->
                     <article class="card modulo-atual">
-                        <div class="card-topo"><span>MOD-05 • ATIVO</span> <span class="badge badge-curso">🟢 Em
-                                Curso</span></div>
+                        <div class="card-topo"><span>MOD-05 • ATIVO</span> <span class="badge badge-curso">
+                                <i class="material-icons-outlined play-circle">play_circle</i>
+                                Em Curso</span>
+                        </div>
                         <h3>Programação em JavaScript (HTML+CSS)</h3>
                         <p>Construção de aplicações interativas e assíncronas essenciais para Client Scripts do
                             ServiceNow.
@@ -179,13 +199,13 @@
 
                     <!-- 6 - ServiceNow -->
                     <article class="card modulo-pausado">
-                        <div class="card-topo"><span>MOD-06</span> <span class="badge badge-pausa">🔵 Pausado / A
-                                aguardar
-                                Fase 2</span></div>
+                        <div class="card-topo"><span>MOD-06</span> <span class="badge badge-pausa">
+                            <i class="material-icons-outlined pause-circle">pause_circle</i> Pausado / A aguardar Fase 2</span>
+                        </div>
                         <h3>Introdução ao ServiceNow</h3>
                         <p>Visão global da Now Platform, navegação na interface Polaris, Listas, Formulários e CMDB.</p>
                         <div class="info-pausa">
-                            <p>ℹ️ Módulo intercalar: desbloqueia a 2ª fase após conclusão de Laboratórios Práticos
+                            <p><i class="material-icons-outlined info">info</i> Módulo intercalar: desbloqueia a 2ª fase após conclusão de Laboratórios Práticos
                                 (MOD-08).
                             </p>
                         </div>
@@ -203,13 +223,13 @@
             <section class="bloco-modulos pipeline">
                 <div class="bloco-header">
                     <h2>Próximos Módulos no Roadmap</h2>
-                    <span class="subtext">🔒 Requisitos sequenciais</span>
+                    <span class="subtext"><i class="material-icons-outlined lock">lock</i> Requisitos sequenciais</span>
                 </div>
 
                 <div class="grid-cards">
                     <!-- 7 - Integração de Processos -->
                     <article class="card modulo-bloqueado">
-                        <div class="card-topo"><span>MOD-07</span> <span class="badge badge-bloqueado">🔒
+                        <div class="card-topo"><span>MOD-07</span> <span class="badge badge-bloqueado"><i class="material-icons-outlined lock">lock</i>
                                 Bloqueado</span>
                         </div>
                         <h3>Integração de Processos</h3>
@@ -223,7 +243,7 @@
 
                     <!-- 8 - Laboratórios Práticos -->
                     <article class="card modulo-bloqueado">
-                        <div class="card-topo"><span>MOD-08</span> <span class="badge badge-bloqueado">🔒
+                        <div class="card-topo"><span>MOD-08</span> <span class="badge badge-bloqueado"><i class="material-icons-outlined lock">lock</i>
                                 Bloqueado</span>
                         </div>
                         <h3>Laboratórios Práticos</h3>
@@ -236,7 +256,7 @@
 
                     <!-- Card 9 -->
                     <article class="card modulo-bloqueado">
-                        <div class="card-topo"><span>MOD-09</span> <span class="badge badge-bloqueado">🔒
+                        <div class="card-topo"><span>MOD-09</span> <span class="badge badge-bloqueado"><i class="material-icons-outlined lock">lock</i>
                                 Bloqueado</span>
                         </div>
                         <h3>Advanced ServiceNow & Custom Apps</h3>
@@ -261,7 +281,6 @@
         </div>
         <div class="footer-direita">© 2025 UpSkill ServiceNow Hub. All rights reserved.</div>
     </footer>
-
 </body>
 
 </html>
