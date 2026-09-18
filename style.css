@@ -410,7 +410,7 @@ a {
 .widget-filtros h3 {
     font-size: 11px;
     letter-spacing: 1px;
-    color: var(--texto-mutado);
+    color: var(--texto-principal);
     margin-bottom: 12px;
 }
 
@@ -534,6 +534,116 @@ a {
     color: #ef4444;
 }
 
+/* WIDGET MENTOR */
+
+.widget-mentor {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mentor-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.mentor-topo h3 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--texto-principal);
+}
+
+.status-online {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--verde-deloitte);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.ponto-verde {
+    width: 8px;
+    height: 8px;
+    background-color: var(--verde-deloitte);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.mentor-perfil-bloco {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.avatar-mentor-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px; 
+    object-fit: cover;
+    border: 1px solid #0000003a;
+}
+
+.mentor-dados-texto h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--texto-principal);
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.cargo-mentor {
+    font-size: 13px;
+    color: var(--cor-bloqueado);
+    line-height: 1.3;
+}
+
+.empresa-mentor {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--verde-deloitte);
+    margin-top: 2px;
+}
+
+.mentor-botoes-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.btn-mentor-acao {
+    flex: 1; /* Faz cada botão ocupar exatamente metade (50%) do espaço */
+    background-color: #3b83f61b;
+    border: 1px solid #3b83f61b;
+    color: var(--texto-principal);
+    padding: 10px 0;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transicao);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn-mentor-acao:hover {
+    background-color: #3b83f630;
+    border-color: #87bc2578;
+    transform: translateY(-2px);
+}
+
+.btn-mentor-acao i {
+    font-size: 16px;
+    line-height: 1;
+}
 
 /* ==========================================================================
     WORKSPACE CONTEÚDO (DIREITA) & KPIs
