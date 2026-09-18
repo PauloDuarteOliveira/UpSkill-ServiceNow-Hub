@@ -1039,7 +1039,7 @@ a {
     header, .header-global {
         height: auto;
         padding: 16px;
-        flex-direction: column; /* Empilha o logo e os utilitários na vertical */
+        flex-direction: column; 
         gap: 16px;
         justify-content: center;
     }
