@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpSkill ServiceNow Hub - Módulo JS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER GLOBAL -->
+    <header class="header-global">
+        <!-- HEADER LADO ESQUERDO -->
+        <div class="header-esquerda">
+            <div class="logo-area">
+                <img class="logo-hub" src="assets/Logo-Hub.png" alt="Logo UpSkill ServiceNow Hub">
+                <span class="badge-trainee">IT CONSULTANT TRAINEE TRACK</span>
+
+            </div>
+        </div>
+        <!-- HEADER LADO DIREITO -->
+        <div class="header-direita">
+            <div class="header-direita-elementos">
+                <div class="barra-pesquisa">
+                    <i class="material-icons-outlined search">search</i>
+                    <input type="text" placeholder="Pesquisar módulos, lições, documentação...">
+                </div>
+                <button class="icon-notificacao">
+                    <i class="material-icons-outlined notifications">
+                        notifications
+                    </i>
+                </button>
+                <button class="icon-dark-light-mode" onclick="document.body.classList.toggle('modo-escuro')">
+                    <i class="material-icons-outlined">bedtime</i>
+                </button>
+            </div>
+
+            <div class="perfil-dropdown" tabindex="0">
+                <img src="assets/foto.png" alt="Foto de Perfil" class="avatar-header">
+                <ul>
+                    <li><a href="#"><i class="material-icons-outlined person">person</i> O Meu Perfil</a></li>
+                    <li><a href="#"><i class="material-icons-outlined settings">settings</i> Defenições</a></li>
+                    <li class="separador"></li>
+                    <li><a href="#"><i class="material-icons-outlined door-back">door_back</i> Terminar sessão</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- SIDEBAR DA ESQUERDA (ÍNDICE DO MÓDULO) -->
+    <div class="main-layout">
+        <aside class="sidebar-lateral">
+
+            <!-- Botão de Retorno ao Dashboard -->
+            <a href="index.html" class="btn-voltar-topo">
+                <i class="material-icons-outlined">arrow_back</i> Voltar ao Dashboard
+            </a>
+
+            <!-- Cabeçalho do Módulo Atual -->
+            <div class="widget widget-progresso-interno">
+                <span class="trilha-tag">◆ TRILHA CORE JS</span>
+                <h2>Módulo 5: JavaScript</h2>
+                <p>Desenvolvimento Web & Client-Side</p>
+
+
+                <!-- Widget 1: Progresso Interno do Módulo -->
+
+                <div class="progresso-linha-topo">
+                    <strong>75% Concluído</strong>
+                    <span>6 de 8 Lições</span>
+                </div>
+                <div class="bar-progresso-container">
+                    <div class="bar-fill pb-75"></div>
+                </div>
+                <div class="progresso-status-sub">
+                    <span>✓ 6 validadas</span>
+                    <span>⚠ 2 pendentes</span>
+                </div>
+            </div>
+
+            <!-- Widget 2: Índice de Lições -->
+            <div class="widget widget-filtros">
+                <h3>ÍNDICE DO MÓDULO</h3>
+                <ul>
+                    <!-- Lição Concluída -->
+                    <li class="licao-concluida">
+                        <span>
+                            <i class="material-icons-outlined text-success">check_circle</i>
+                            Lição 1: Sintaxe Base & Estruturas
+                        </span>
+                        <span class="qtd text-muted">25 min</span>
+                    </li>
+
+                    <!-- Lição Atual Em Curso -->
+                    <li class="active licao-em-curso">
+                        <span>
+                            <i class="material-icons-outlined text-deloitte">radio_button_checked</i>
+                            Lição 2: Manipulação do DOM
+                        </span>
+                        <span class="qtd badge-em-curso">EM CURSO</span>
+                    </li>
+
+                    <!-- Lições Disponíveis Próximas -->
+                    <li>
+                        <span>
+                            <i class="material-icons-outlined">radio_button_unchecked</i>
+                            Lição 3: Eventos em JS & Delegação
+                        </span>
+                        <span class="qtd text-muted">30 min</span>
+                    </li>
+
+                    <li>
+                        <span>
+                            <i class="material-icons-outlined">radio_button_unchecked</i>
+                            Lição 4: Assincronia & Fetch APIs
+                        </span>
+                        <span class="qtd text-muted">50 min</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Widget 3: Mentor Fixo na Base -->
+            <div class="widget widget-mentor base-mentor">
+                <div class="mentor-row-bloco">
+                    <img src="assets/Carlos Mendes.jpg" alt="Carlos Mendes" class="mentor-avatar-img">
+                    <div class="mentor-meta-dados">
+                        <h4>Carlos Mendes</h4>
+                        <p>Mentor Técnico</p>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- WORKSPACE DA DIREITA (ÁREA DE CONTEÚDO TÉCNICO) -->
+        <main class="workspace-conteudo">
+
+            <!-- Zona de Título e Metadados -->
+            <div class="doc-header">
+                <!-- Caminho de Navegação (Breadcrumbs) -->
+                <nav class="breadcrumbs">
+                    Módulos &gt; JavaScript para ServiceNow &gt; <span class="bc-atual">Lição 2: Manipulação do
+                        DOM</span>
+                </nav>
+
+                <!-- Selos de Informação (Meta Badges) -->
+                <div class="meta-badges">
+                    <span class="m-badge">
+                        <i class="material-icons-outlined">schedule</i> Tempo estimado: 45 min
+                    </span>
+                    <span class="m-badge">
+                        <i class="material-icons-outlined">signal_cellular_alt</i> Nível: Intermédio
+                    </span>
+                    <span class="m-badge">
+                        <i class="material-icons-outlined">verified</i> Última atualização: Hoje
+                    </span>
+                    <span class="m-badge">
+                        <i class="material-icons-outlined">terminal</i> Service Portal ES6+
+                    </span>
+                </div>
+
+                <!-- Título Principal da Aula -->
+                <h1>Manipulação do DOM & Integração com Client Scripts</h1>
+            </div>
+
+            <!-- INTRODUÇÃO TEÓRICA -->
+            <section class="artigo-texto">
+                <p>A manipulação direta e programática da árvore do Document Object Model (DOM) constitui a espinha
+                    dorsal de experiências reativas na web moderna. Dentro do ecossistema ServiceNow, a sua aplicação
+                    requer rigor metodológico — especialmente ao diferenciar componentes nativos de formulários de
+                    portais altamente customizados no Service Portal.</p>
+                <p>Enquanto as interfaces legadas e os formulários de backend operam prioritariamente com a suite de
+                    APIs do objeto global <code>g_form</code>, as soluções voltadas para catálogo corporativo e portais
+                    dedicados frequentemente recorrem a listeners assíncronos e seletores otimizados
+                    (<code>querySelector</code> e mutações de <code>classList</code>). O controlo disciplinado do ciclo
+                    de vida os elementos mitiga reflows contínuos do browser e previne vazamentos de memória (memory
+                    leaks).</p>
+            </section>
+
+            <!-- GRELHA DE 3 DESTAQUES RÁPIDOS -->
+            <div class="grelha-features">
+                <!-- Card 1: DOM Traversal -->
+                <div class="feature-card">
+                    <i class="material-icons-outlined icon-blue">account_tree</i>
+                    <div class="feature-content">
+                        <h4>Targeted DOM Traversal</h4>
+                        <p>Substituição de nós globais por referências estritas no container de escopo local.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Zero Leak -->
+                <div class="feature-card">
+                    <i class="material-icons-outlined icon-green">memory</i>
+                    <div class="feature-content">
+                        <h4>Zero Leak Cleanup</h4>
+                        <p>Desvinculação sistemática de observers ao descarregar instâncias de widgets e dialogs.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Resiliency -->
+                <div class="feature-card">
+                    <i class="material-icons-outlined icon-purple">verified_user</i>
+                    <div class="feature-content">
+                        <h4>Upgrade Resiliency</h4>
+                        <p>Compatibilidade assegurada com as diretrizes do Architecture Review Board da Deloitte.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENTOR DE CÓDIGO PROFISSIONAL (IDE CONTAINER) -->
+            <div class="ide-container">
+                <div class="ide-header">
+                    <div class="ide-ficheiro">
+                        <i class="material-icons-outlined">code</i>
+                        <span>catalogClientScript.js</span>
+                    </div>
+                    <div class="ide-accoes">
+                        <span class="lang-tag">JAVASCRIPT (ES6+)</span>
+                        <button class="btn-ide-copiar">
+                            <i class="material-icons-outlined">content_copy</i> Copiar Código
+                        </button>
+                        <button class="btn-ide-executar">▶ Executar no Scratchpad</button>
+                    </div>
+                </div>
+                <div class="ide-editor">
+                    <pre><code>1  // Client Script: Manipulação dinâmica de elementos no Service Portal
+2  function onChange(control, oldValue, newValue, isLoading) {
+3      if (isLoading || newValue === '') {
+4          return;
+5      }
+6  
+7      // Querying elements cleanly and handling dynamic class mutation
+8      const targetFieldContainer = document.querySelector('.urgency-alert-container');
+9      if (targetFieldContainer) {
+10          if (newValue === 'high_priority') {
+11              targetFieldContainer.classList.add('bg-amber-50', 'border-deloitte-green');
+12              targetFieldContainer.setAttribute('aria-live', 'assertive');
+13              console.info('[ServiceNow Trainee Hub] Urgency flag updated dynamically.');
+14          }
+15      }
+16  }</code></pre>
+                </div>
+            </div>
+
+            <!-- CAIXA STANDARD DELOITTE -->
+            <div class="caixa-standard-deloitte">
+                <div class="standard-header">
+                    <i class="material-icons-outlined">verified_user</i>
+                    <span>STANDARD CORPORATIVO</span>
+                </div>
+
+                <h3>Deloitte Best Practices & ServiceNow Governance</h3>
+
+                <ul class="standard-lista">
+                    <li>
+                        <strong>Evitar manipulação direta do DOM em Workspace/Next Experience</strong>
+                        <p>Utilizar g_form, APIs nativas (GlideDialogWindow, GlideModal) e UI Policies sempre que
+                            possível
+                            para garantir retrocompatibilidade contínua em upgrades de versão (Utah, Vancouver,
+                            Washington
+                            DC).</p>
+                    </li>
+                    <li>
+                        <strong>Scoped Applications & Clean Code Standards</strong>
+                        <p>Manter todas as funções puras, isoladas do escopo global da janela (window) e rigorosamente
+                            documentadas de acordo com as diretrizes de IT Quality Assurance da Deloitte Global.</p>
+                    </li>
+                    <li>
+                        <strong>Performance & Event Debouncing</strong>
+                        <p>Em eventos contínuos como onKeypress, busca preditiva ou resize, implementar estratégia
+                            mandatória de debouncing/throttling (mín. 300ms) para mitigar bloqueio da thread primária de
+                            execução.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- SANDBOX INTERATIVO (SIMULADOR DE URGÊNCIA) -->
+            <div class="sandbox-container">
+                <span class="status-simulador-badge">Simulador Ativo</span>
+                <span class="sandbox-tag">LABORATÓRIO ASSISTIDO</span>
+                <h2>Sandbox Interativo: Validador de Urgência</h2>
+                <h3>Teste a alteração das classes dinâmicas sem afetar a instância de produção.</h3>
+
+                <div class="sandbox-workspace">
+                    <div class="s-input-group">
+                        <label>Prioridade do Ticket:</label>
+                        <select class="s-select">
+                            <option>1 - Baixa (Normal)</option>
+                            <option>2 - Média (Standard)</option>
+                            <option selected>3 - Alta Prioridade (Critical)</option>
+                        </select>
+                    </div>
+
+                    <div class="urgency-alert-container bg-amber-50 border-deloitte-green">
+                        <div class="alert-content">
+                            <i class="material-icons-outlined text-amber">crisis_alert</i>
+                            <div class="alert-texto-bloco">
+                                <strong>Alerta de Alta Gravidade Ativado</strong>
+                                <p>SLA de resposta prioritário acionado pela equipa técnica.</p>
+                            </div>
+                        </div>
+                        <span class="aria-tag">aria-live: assertive</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BARRA DE NAVEGAÇÃO DA AULA (FOOTER INTERNO) -->
+            <div class="navegacao-aula-footer">
+                <button class="btn-aula-nav-secundario">
+                    <i class="material-icons-outlined">arrow_back</i>
+                    <span>Lição Anterior</span>
+                </button>
+                <button class="btn-aula-nav-primario">
+                    <span>Marcar como Concluída & Avançar</span>
+                    <i class="material-icons-outlined">arrow_forward</i>
+                </button>
+            </div>
+
+        </main>
+    </div>
+    </div>
+    <!-- FOOTER GLOBAL -->
+    <footer class="footer-global">
+        <div class="footer-esquerda"><strong>UpSkill ServiceNow Hub</strong> • Deloitte IT Consultant Academy</div>
+        <div class="footer-centro">
+            <a href="#">Políticas de Privacidade</a>
+            <a href="#">Termos de Serviço</a>
+            <a href="#">Suporte do Laboratório</a>
+        </div>
+        <div class="footer-direita">© 2025 UpSkill ServiceNow Hub. All rights reserved.</div>
+    </footer>
+</body>
+
+</html>
