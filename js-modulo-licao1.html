@@ -49,7 +49,7 @@
             </div>
         </div>
     </header>
-    <!-- SIDEBAR DA ESQUERDA (ÍNDICE DO MÓDULO) -->
+    <!-- SIDEBAR DA ESQUERDA -->
     <div class="main-layout">
         <aside class="sidebar-lateral">
 
@@ -84,25 +84,24 @@
             <div class="widget widget-filtros">
                 <h3>ÍNDICE DO MÓDULO</h3>
                 <ul>
-                    <!-- Lição Concluída -->
-                    <li class="licao-concluida">
+
+                    <li class="active licao-em-curso">
                         <span>
-                            <i class="material-icons-outlined text-success">check_circle</i>
+                            <i class="material-icons-outlined text-deloitte">radio_button_checked</i>
                             Lição 1: Sintaxe Base & Estruturas
                         </span>
                         <span class="qtd text-muted">25 min</span>
                     </li>
-
-                    <!-- Lição Atual Em Curso -->
-                    <li class="active licao-em-curso">
-                        <span>
-                            <i class="material-icons-outlined text-deloitte">radio_button_checked</i>
-                            Lição 2: Manipulação do DOM
-                        </span>
-                        <span class="qtd badge-em-curso">EM CURSO</span>
-                    </li>
-
-                    <!-- Lições Disponíveis Próximas -->
+                    <a href="js-modulo-licao2.html">
+                        <li>
+                            <span>
+                                <i class="material-icons-outlined">radio_button_unchecked</i>
+                                Lição 2: Manipulação do DOM
+                            </span>
+                            <span class="qtd badge-em-curso">EM CURSO</span>
+                        </li>
+                    </a>
+                    
                     <li>
                         <span>
                             <i class="material-icons-outlined">radio_button_unchecked</i>
@@ -134,119 +133,121 @@
 
         </aside>
 
-        <!-- WORKSPACE DA DIREITA (ÁREA DE CONTEÚDO TÉCNICO) -->
+        <!-- WORKSPACE DA DIREITA -->
         <main class="workspace-conteudo">
             <div class="caixa-standard-deloitte">
-                
+
                 <div class="doc-header">
-                   
+
                     <nav class="breadcrumbs">
-                        <a href="index.html" class="bc-link">Módulos</a> &gt; JavaScript para ServiceNow &gt; <span class="bc-atual">Lição 2: Manipulação do
-                            DOM</span>
+                        <a href="index.html" class="bc-link">Módulos</a> &gt; JavaScript para ServiceNow &gt; <span
+                            class="bc-atual">Lição 1: Sintaxe Base & Estruturas</span>
                     </nav>
 
                     <!-- Selos de Informação (Meta Badges) -->
                     <div class="meta-badges">
                         <span class="m-badge">
-                            <i class="material-icons-outlined">schedule</i> Tempo estimado: 45 min
+                            <i class="material-icons-outlined">schedule</i> Tempo estimado: 25 min
                         </span>
                         <span class="m-badge">
-                            <i class="material-icons-outlined">signal_cellular_alt</i> Nível: Intermédio
+                            <i class="material-icons-outlined">signal_cellular_alt</i> Nível: Inicial
                         </span>
                         <span class="m-badge">
                             <i class="material-icons-outlined">verified</i> Última atualização: Hoje
                         </span>
                         <span class="m-badge">
-                            <i class="material-icons-outlined">terminal</i> Service Portal ES6+
+                            <i class="material-icons-outlined">terminal</i> ECMAScript 6 (ES6)
                         </span>
                     </div>
 
                     <!-- Título Principal da Aula -->
-                    <h1>Manipulação do DOM & Integração com Client Scripts</h1>
+                    <h1>Sintaxe Base, Declaração de Variáveis & Estruturas Lógicas</h1>
                 </div>
 
                 <!-- INTRODUÇÃO TEÓRICA -->
                 <section class="artigo-texto">
-                    <p>A manipulação direta e programática da árvore do Document Object Model (DOM) constitui a espinha
-                        dorsal de experiências reativas na web moderna. Dentro do ecossistema ServiceNow, a sua
-                        aplicação
-                        requer rigor metodológico — especialmente ao diferenciar componentes nativos de formulários de
-                        portais altamente customizados no Service Portal.</p>
-                    <p>Enquanto as interfaces legadas e os formulários de backend operam prioritariamente com a suite de
-                        APIs do objeto global <code>g_form</code>, as soluções voltadas para catálogo corporativo e
-                        portais
-                        dedicados frequentemente recorrem a listeners assíncronos e seletores otimizados
-                        (<code>querySelector</code> e mutações de <code>classList</code>). O controlo disciplinado do
-                        ciclo
-                        de vida os elementos mitiga reflows contínuos do browser e previne vazamentos de memória (memory
-                        leaks).</p>
+                    <p>O JavaScript moderno utiliza escopos bem definidos para garantir a segurança e a performance da
+                        aplicação. Na Now Platform, o uso correto de variáveis evita colisões de nomes globais e garante
+                        que as regras de negócio corram sem lentidão no browser do utilizador.</p>
+                    <p>Com a introdução do ES6, a antiga palavra-chave <code>var</code> foi descontinuada a favor de
+                        <code>let</code> e <code>const</code>, que introduzem o conceito de escopo de bloco e
+                        imutabilidade, fundamentais para a criação de Client Scripts robustos.
+                    </p>
                 </section>
             </div>
-
             <!-- GRELHA DE 3 DESTAQUES RÁPIDOS -->
             <div class="grelha-features">
-                <!-- Card 1: DOM Traversal -->
+                <!-- Card 1: Block Scoping -->
                 <div class="feature-card">
-                    <i class="material-icons-outlined icon-blue">account_tree</i>
+                    <i class="material-icons-outlined icon-blue">lock</i>
                     <div class="feature-content">
-                        <h4>Targeted DOM Traversal</h4>
-                        <p>Substituição de nós globais por referências estritas no container de escopo local.</p>
+                        <h4>Block Scoping Real</h4>
+                        <p>Variáveis declaradas com let ficam trancadas dentro das chavetas onde nasceram.</p>
                     </div>
                 </div>
 
-                <!-- Card 2: Zero Leak -->
+                <!-- Card 2: Const Enforcements -->
                 <div class="feature-card">
-                    <i class="material-icons-outlined icon-green">memory</i>
+                    <i class="material-icons-outlined icon-green">shield</i>
                     <div class="feature-content">
-                        <h4>Zero Leak Cleanup</h4>
-                        <p>Desvinculação sistemática de observers ao descarregar instâncias de widgets e dialogs.</p>
+                        <h4>Immutable References</h4>
+                        <p>Uso mandatório de const para objetos e arrays que não devem sofrer reatribuição.</p>
                     </div>
                 </div>
 
-                <!-- Card 3: Resiliency -->
+                <!-- Card 3: Logical Branching -->
                 <div class="feature-card">
-                    <i class="material-icons-outlined icon-purple">verified_user</i>
+                    <i class="material-icons-outlined icon-purple">alt_route</i>
                     <div class="feature-content">
-                        <h4>Upgrade Resiliency</h4>
-                        <p>Compatibilidade assegurada com as diretrizes do Architecture Review Board da Deloitte.</p>
+                        <h4>Clean Conditionals</h4>
+                        <p>Estruturação de ifs e switches otimizados para validar estados de tabelas
+                            (Task/Incident).</p>
                     </div>
                 </div>
             </div>
 
-            <!-- CONTENTOR DE CÓDIGO PROFISSIONAL (IDE CONTAINER) -->
-            <div class="ide-container">
-                <div class="ide-header">
-                    <div class="ide-ficheiro">
-                        <i class="material-icons-outlined">code</i>
-                        <span>catalogClientScript.js</span>
-                    </div>
-                    <div class="ide-accoes">
-                        <span class="lang-tag">JAVASCRIPT (ES6+)</span>
-                        <button class="btn-ide-copiar">
-                            <i class="material-icons-outlined">content_copy</i> Copiar Código
-                        </button>
-                        <button class="btn-ide-executar">▶ Executar no Scratchpad</button>
-                    </div>
+            <!-- TABELA COMPARATIVA DE ESCOPOS -->
+            <div class="comparativo-container">
+                <div class="comparativo-header">
+                    <i class="material-icons-outlined">rule</i>
+                    <span>MATRIZ DE ESCOPOS & MEMÓRIA (ES6+)</span>
                 </div>
-                <div class="ide-editor">
-                    <pre><code>1  // Client Script: Manipulação dinâmica de elementos no Service Portal
-2  function onChange(control, oldValue, newValue, isLoading) {
-3      if (isLoading || newValue === '') {
-4          return;
-5      }
-6  
-7      // Querying elements cleanly and handling dynamic class mutation
-8      const targetFieldContainer = document.querySelector('.urgency-alert-container');
-9      if (targetFieldContainer) {
-10          if (newValue === 'high_priority') {
-11              targetFieldContainer.classList.add('bg-amber-50', 'border-deloitte-green');
-12              targetFieldContainer.setAttribute('aria-live', 'assertive');
-13              console.info('[ServiceNow Trainee Hub] Urgency flag updated dynamically.');
-14          }
-15      }
-16  }</code></pre>
+
+                <div class="grelha-comparativa">
+                    <!-- Linha 1: Títulos das Colunas -->
+                    <div class="comp-linha comp-topo">
+                        <div class="comp-celula">Palavra-Chave</div>
+                        <div class="comp-celula">Escopo de Ação</div>
+                        <div class="comp-celula">Permite Reatribuição</div>
+                        <div class="comp-celula">Diretriz Deloitte</div>
+                    </div>
+
+                    <!-- Linha 2: VAR -->
+                    <div class="comp-linha">
+                        <div class="comp-celula font-code">var</div>
+                        <div class="comp-celula">Global / Função</div>
+                        <div class="comp-celula status-danger">✓ Sim (Instável)</div>
+                        <div class="comp-celula recomendacao-danger">🚨 BANIDO: Risco de Hoisting</div>
+                    </div>
+
+                    <!-- Linha 3: LET -->
+                    <div class="comp-linha">
+                        <div class="comp-celula font-code">let</div>
+                        <div class="comp-celula">Bloco (Chavetas)</div>
+                        <div class="comp-celula status-success">✓ Sim</div>
+                        <div class="comp-celula">Usar apenas em loops ou contadores</div>
+                    </div>
+
+                    <!-- Linha 4: CONST -->
+                    <div class="comp-linha active-row">
+                        <div class="comp-celula font-code">const</div>
+                        <div class="comp-celula">Bloco (Chavetas)</div>
+                        <div class="comp-celula status-frozen">❌ Não (Imutável)</div>
+                        <div class="comp-celula recomendacao-deloitte">🟢 MANDATÓRIO: Padrão por Omissão</div>
+                    </div>
                 </div>
             </div>
+
 
             <!-- CAIXA STANDARD DELOITTE -->
             <div class="caixa-standard-deloitte">
@@ -259,67 +260,57 @@
 
                 <ul class="standard-lista">
                     <li>
-                        <strong>Evitar manipulação direta do DOM em Workspace/Next Experience</strong>
-                        <p>Utilizar g_form, APIs nativas (GlideDialogWindow, GlideModal) e UI Policies sempre que
-                            possível
-                            para garantir retrocompatibilidade contínua em upgrades de versão (Utah, Vancouver,
-                            Washington
-                            DC).</p>
+                        <strong>Proibição de var no código moderno</strong>
+                        <p>O uso de var está banido devido ao hoisting automático, que joga variáveis para o escopo
+                            global. Usar estritamente const por omissão e let apenas quando necessário.</p>
                     </li>
                     <li>
-                        <strong>Scoped Applications & Clean Code Standards</strong>
-                        <p>Manter todas as funções puras, isoladas do escopo global da janela (window) e rigorosamente
-                            documentadas de acordo com as diretrizes de IT Quality Assurance da Deloitte Global.</p>
-                    </li>
-                    <li>
-                        <strong>Performance & Event Debouncing</strong>
-                        <p>Em eventos contínuos como onKeypress, busca preditiva ou resize, implementar estratégia
-                            mandatória de debouncing/throttling (mín. 300ms) para mitigar bloqueio da thread primária de
-                            execução.</p>
+                        <strong>Nomes de Variáveis Semânticos e CamelCase</strong>
+                        <p>Todas as variáveis devem seguir a convenção camelCase e ter nomes descritivos claros (ex:
+                            userLocation em vez de apenas loc) para facilitar revisões de código por arquitetos
+                            seniores.</p>
                     </li>
                 </ul>
             </div>
 
-            <!-- SANDBOX INTERATIVO (SIMULADOR DE URGÊNCIA) -->
+            <!-- SANDBOX INTERATIVO -->
             <div class="sandbox-container">
                 <span class="status-simulador-badge">Simulador Ativo</span>
                 <span class="sandbox-tag">LABORATÓRIO ASSISTIDO</span>
-                <h2>Sandbox Interativo: Validador de Urgência</h2>
-                <h3>Teste a alteração das classes dinâmicas sem afetar a instância de produção.</h3>
+                <h3>Sandbox Interativo: Validador de Mutabilidade</h3>
 
                 <div class="sandbox-workspace">
                     <div class="s-input-group">
-                        <label>Prioridade do Ticket:</label>
+                        <label>Tipo de Declaração:</label>
                         <select class="s-select">
-                            <option>1 - Baixa (Normal)</option>
-                            <option>2 - Média (Standard)</option>
-                            <option selected>3 - Alta Prioridade (Critical)</option>
+                            <option selected>const (Referência Fixa)</option>
+                            <option>let (Variável Mutável)</option>
                         </select>
                     </div>
 
                     <div class="urgency-alert-container bg-amber-50 border-deloitte-green">
                         <div class="alert-content">
-                            <i class="material-icons-outlined text-amber">crisis_alert</i>
+                            <i class="material-icons-outlined text-amber">lock_open</i>
                             <div class="alert-texto-bloco">
-                                <strong>Alerta de Alta Gravidade Ativado</strong>
-                                <p>SLA de resposta prioritário acionado pela equipa técnica.</p>
+                                <strong>Estado da Memória Protegido</strong>
+                                <p>A referência não permite reatribuição acidental no código.</p>
                             </div>
                         </div>
-                        <span class="aria-tag">aria-live: assertive</span>
+                        <span class="aria-tag">TypeError Protection</span>
                     </div>
                 </div>
             </div>
 
-            <!-- BARRA DE NAVEGAÇÃO DA AULA (FOOTER INTERNO) -->
+            <!-- BARRA DE NAVEGAÇÃO DA AULA -->
             <div class="navegacao-aula-footer">
-                <button class="btn-aula-nav-secundario">
-                    <i class="material-icons-outlined">arrow_back</i>
-                    <span>Lição Anterior</span>
+                <button>
                 </button>
-                <button class="btn-aula-nav-primario">
-                    <span>Marcar como Concluída & Avançar</span>
-                    <i class="material-icons-outlined">arrow_forward</i>
-                </button>
+                <a href="js-modulo-licao2.html">
+                    <button class="btn-aula-nav-secundario">
+                        <span>Avançar</span>
+                        <i class="material-icons-outlined">arrow_forward</i>
+                    </button>
+                </a>
             </div>
 
         </main>
