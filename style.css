@@ -1315,7 +1315,7 @@ body.modo-escuro .s-card-active {
 /* Widget 3: Mentor Fixo na Base */
 .base-mentor {
     margin-top: auto;
-    background-color: #ffffff08;
+    background-color: #ffffff;
     border-radius: var(--raio-borda);
     padding: 16px;
     border: 1px solid #ffffff0d;
@@ -1799,7 +1799,7 @@ body.modo-escuro .s-card-active {
 
 
 .btn-aula-nav-secundario {
-    background: none;
+    background-color: #ffffff;
     border: 1px solid #cbd5e1;
     color: #475569;
 }
