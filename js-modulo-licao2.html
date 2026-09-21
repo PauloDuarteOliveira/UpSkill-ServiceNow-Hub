@@ -136,48 +136,52 @@
 
         <!-- WORKSPACE DA DIREITA (ÁREA DE CONTEÚDO TÉCNICO) -->
         <main class="workspace-conteudo">
+            <div class="caixa-standard-deloitte">
+                
+                <div class="doc-header">
+                   
+                    <nav class="breadcrumbs">
+                        <a href="index.html" class="bc-link">Módulos</a> &gt; JavaScript para ServiceNow &gt; <span class="bc-atual">Lição 2: Manipulação do
+                            DOM</span>
+                    </nav>
 
-            <!-- Zona de Título e Metadados -->
-            <div class="doc-header">
-                <!-- Caminho de Navegação (Breadcrumbs) -->
-                <nav class="breadcrumbs">
-                    Módulos &gt; JavaScript para ServiceNow &gt; <span class="bc-atual">Lição 2: Manipulação do
-                        DOM</span>
-                </nav>
+                    <!-- Selos de Informação (Meta Badges) -->
+                    <div class="meta-badges">
+                        <span class="m-badge">
+                            <i class="material-icons-outlined">schedule</i> Tempo estimado: 45 min
+                        </span>
+                        <span class="m-badge">
+                            <i class="material-icons-outlined">signal_cellular_alt</i> Nível: Intermédio
+                        </span>
+                        <span class="m-badge">
+                            <i class="material-icons-outlined">verified</i> Última atualização: Hoje
+                        </span>
+                        <span class="m-badge">
+                            <i class="material-icons-outlined">terminal</i> Service Portal ES6+
+                        </span>
+                    </div>
 
-                <!-- Selos de Informação (Meta Badges) -->
-                <div class="meta-badges">
-                    <span class="m-badge">
-                        <i class="material-icons-outlined">schedule</i> Tempo estimado: 45 min
-                    </span>
-                    <span class="m-badge">
-                        <i class="material-icons-outlined">signal_cellular_alt</i> Nível: Intermédio
-                    </span>
-                    <span class="m-badge">
-                        <i class="material-icons-outlined">verified</i> Última atualização: Hoje
-                    </span>
-                    <span class="m-badge">
-                        <i class="material-icons-outlined">terminal</i> Service Portal ES6+
-                    </span>
+                    <!-- Título Principal da Aula -->
+                    <h1>Manipulação do DOM & Integração com Client Scripts</h1>
                 </div>
 
-                <!-- Título Principal da Aula -->
-                <h1>Manipulação do DOM & Integração com Client Scripts</h1>
+                <!-- INTRODUÇÃO TEÓRICA -->
+                <section class="artigo-texto">
+                    <p>A manipulação direta e programática da árvore do Document Object Model (DOM) constitui a espinha
+                        dorsal de experiências reativas na web moderna. Dentro do ecossistema ServiceNow, a sua
+                        aplicação
+                        requer rigor metodológico — especialmente ao diferenciar componentes nativos de formulários de
+                        portais altamente customizados no Service Portal.</p>
+                    <p>Enquanto as interfaces legadas e os formulários de backend operam prioritariamente com a suite de
+                        APIs do objeto global <code>g_form</code>, as soluções voltadas para catálogo corporativo e
+                        portais
+                        dedicados frequentemente recorrem a listeners assíncronos e seletores otimizados
+                        (<code>querySelector</code> e mutações de <code>classList</code>). O controlo disciplinado do
+                        ciclo
+                        de vida os elementos mitiga reflows contínuos do browser e previne vazamentos de memória (memory
+                        leaks).</p>
+                </section>
             </div>
-
-            <!-- INTRODUÇÃO TEÓRICA -->
-            <section class="artigo-texto">
-                <p>A manipulação direta e programática da árvore do Document Object Model (DOM) constitui a espinha
-                    dorsal de experiências reativas na web moderna. Dentro do ecossistema ServiceNow, a sua aplicação
-                    requer rigor metodológico — especialmente ao diferenciar componentes nativos de formulários de
-                    portais altamente customizados no Service Portal.</p>
-                <p>Enquanto as interfaces legadas e os formulários de backend operam prioritariamente com a suite de
-                    APIs do objeto global <code>g_form</code>, as soluções voltadas para catálogo corporativo e portais
-                    dedicados frequentemente recorrem a listeners assíncronos e seletores otimizados
-                    (<code>querySelector</code> e mutações de <code>classList</code>). O controlo disciplinado do ciclo
-                    de vida os elementos mitiga reflows contínuos do browser e previne vazamentos de memória (memory
-                    leaks).</p>
-            </section>
 
             <!-- GRELHA DE 3 DESTAQUES RÁPIDOS -->
             <div class="grelha-features">
