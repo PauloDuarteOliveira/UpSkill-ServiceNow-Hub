@@ -1818,17 +1818,17 @@ body.modo-escuro .s-card-active {
 
 body.modo-escuro .workspace-conteudo {
     background-color: #6565657a  ;
-    transition: background-color 2s ease;
+    transition: background-color 2.5s ease;
 }
 
 body.modo-escuro .sidebar-lateral {
     background-color: #6565657a ;
-    transition: background-color 2s ease;
+    transition: background-color 7s ease;
 }
 
 body.modo-escuro .main-layout {
     background-color: #656565 ;
-    transition: background-color 2s ease;
+    transition: background-color 3s ease;
 }
 
 body.modo-escuro .icon-dark-light-mode i {
