@@ -247,9 +247,7 @@ a {
     list-style: none;
 }
 
-/* ==========================================================================
-    STRUCTURAL MAIN LAYOUT (CSS GRID)
-   ========================================================================== */
+/* STRUCTURAL MAIN LAYOUT */
 .main-layout {
     background-color: var(--bg-main);
     display: grid;
@@ -619,7 +617,7 @@ a {
 }
 
 .btn-mentor-acao {
-    flex: 1; /* Faz cada botão ocupar exatamente metade (50%) do espaço */
+    flex: 1;
     background-color: #3b83f61b;
     border: 1px solid #3b83f61b;
     color: var(--texto-principal);
@@ -930,7 +928,6 @@ body.modo-escuro .s-card-active {
     pointer-events: none; 
 }
 
-/* Módulo 5 (JavaScript) Ativo com o Glow Verde Deloitte */
 .modulo-atual {
     border-color: var(--verde-deloitte);
     box-shadow: 0 0 15px var(--verde-glow);
@@ -997,7 +994,6 @@ body.modo-escuro .s-card-active {
     transform: scale(0.99);
 }
 
-/* Módulo 6 (ServiceNow) em Pausa */
 .info-pausa {
     background-color: #fdf8f0;
     border: 1px solid #fef3c7;
