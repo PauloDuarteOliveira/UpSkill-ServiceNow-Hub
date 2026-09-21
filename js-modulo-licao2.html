@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UpSkill ServiceNow Hub - Módulo JS  - Lição 2</title>
+    <title>UpSkill ServiceNow Hub - Módulo JS - Lição 2</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -49,11 +49,10 @@
             </div>
         </div>
     </header>
-    <!-- SIDEBAR DA ESQUERDA (ÍNDICE DO MÓDULO) -->
+    <!-- SIDEBAR DA ESQUERDA -->
     <div class="main-layout">
         <aside class="sidebar-lateral">
 
-            <!-- Botão de Retorno ao Dashboard -->
             <a href="index.html" class="btn-voltar-topo">
                 <i class="material-icons-outlined">arrow_back</i> Voltar ao Dashboard
             </a>
@@ -84,16 +83,16 @@
             <div class="widget widget-filtros">
                 <h3>ÍNDICE DO MÓDULO</h3>
                 <ul>
-                    <!-- Lição Concluída -->
-                    <li class="licao-concluida">
-                        <span>
-                            <i class="material-icons-outlined text-success">check_circle</i>
-                            Lição 1: Sintaxe Base & Estruturas
-                        </span>
-                        <span class="qtd text-muted">25 min</span>
-                    </li>
+                    <a href="js-modulo-licao1.html">
+                        <li class="licao-concluida">
+                            <span>
+                                <i class="material-icons-outlined text-success">check_circle</i>
+                                Lição 1: Sintaxe Base & Estruturas
+                            </span>
+                            <span class="qtd text-muted">25 min</span>
+                        </li>
+                    </a>
 
-                    <!-- Lição Atual Em Curso -->
                     <li class="active licao-em-curso">
                         <span>
                             <i class="material-icons-outlined text-deloitte">radio_button_checked</i>
@@ -102,7 +101,6 @@
                         <span class="qtd badge-em-curso">EM CURSO</span>
                     </li>
 
-                    <!-- Lições Disponíveis Próximas -->
                     <li>
                         <span>
                             <i class="material-icons-outlined">radio_button_unchecked</i>
@@ -134,14 +132,15 @@
 
         </aside>
 
-        <!-- WORKSPACE DA DIREITA (ÁREA DE CONTEÚDO TÉCNICO) -->
+        <!-- WORKSPACE DA DIREITA -->
         <main class="workspace-conteudo">
             <div class="caixa-standard-deloitte">
-                
+
                 <div class="doc-header">
-                   
+
                     <nav class="breadcrumbs">
-                        <a href="index.html" class="bc-link">Módulos</a> &gt; JavaScript para ServiceNow &gt; <span class="bc-atual">Lição 2: Manipulação do
+                        <a href="index.html" class="bc-link">Módulos</a> &gt; JavaScript para ServiceNow &gt; <span
+                            class="bc-atual">Lição 2: Manipulação do
                             DOM</span>
                     </nav>
 
@@ -280,7 +279,7 @@
                 </ul>
             </div>
 
-            <!-- SANDBOX INTERATIVO (SIMULADOR DE URGÊNCIA) -->
+            <!-- SANDBOX INTERATIVO -->
             <div class="sandbox-container">
                 <span class="status-simulador-badge">Simulador Ativo</span>
                 <span class="sandbox-tag">LABORATÓRIO ASSISTIDO</span>
@@ -310,12 +309,14 @@
                 </div>
             </div>
 
-            <!-- BARRA DE NAVEGAÇÃO DA AULA (FOOTER INTERNO) -->
+            <!-- BARRA DE NAVEGAÇÃO DA AULA -->
             <div class="navegacao-aula-footer">
-                <button class="btn-aula-nav-secundario">
-                    <i class="material-icons-outlined">arrow_back</i>
-                    <span>Lição Anterior</span>
-                </button>
+                <a href="js-modulo-licao1.html">
+                    <button class="btn-aula-nav-secundario">
+                        <i class="material-icons-outlined">arrow_back</i>
+                        <span>Lição Anterior</span>
+                    </button>
+                </a>
                 <button class="btn-aula-nav-primario">
                     <span>Marcar como Concluída & Avançar</span>
                     <i class="material-icons-outlined">arrow_forward</i>
