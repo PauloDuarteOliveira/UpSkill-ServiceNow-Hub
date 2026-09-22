@@ -53,3 +53,11 @@ O ciclo de desenvolvimento deste portal foi gerido sob metodologias ágeis de co
 2. Clone este repositório para a sua máquina local.
 3. Clique com o botão direito do rato no ficheiro `index.html` e selecione **"Open with Live Server"**.
 4. Explore a transição fluída entre o Dashboard principal e o ecossistema de lições clicando nos botões ou cartões ativos.
+
+---
+
+## 📚 Referências Visuais & Créditos
+
+O design system e o alinhamento estético deste workspace foram baseados nas diretivas e componentes estruturais do **Google Stitch**, garantindo uma interface polida, moderna e focada em produtividade SaaS.
+
+*   **Projeto de Referência:** [Google Stitch - Dashboard Project](https://stitch.withgoogle.com/projects/16635127389998481073)
