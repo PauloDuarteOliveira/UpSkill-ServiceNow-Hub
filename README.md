@@ -1,6 +1,6 @@
 # 🟢 UpSkill ServiceNow Hub — Trainee Workspace
 
-Este repositório contém o projeto prático desenvolvido no âmbito do módulo de **Programação em JavaScript** da **UpSkill Deloitte IT Consultant Academy (Turma 2026)**.
+Este repositório contém o projeto prático desenvolvido no âmbito do módulo de **Programação em JavaScript** da **UpSkill ServiceNow (Turma 2026)**.
 
 O objetivo principal do trabalho consiste na aplicação integrada e consolidação dos conhecimentos adquiridos em aula sobre as fundações de **HTML5** e **CSS3**, simulando um ambiente de desenvolvimento corporativo focado no ecossistema **ServiceNow**.
 
@@ -8,7 +8,7 @@ O objetivo principal do trabalho consiste na aplicação integrada e consolidaç
 
 ## 🎯 Objetivo & Escopo do Trabalho
 
-O projeto foi desenhado sob o padrão visual e de governança técnica da **Deloitte**, imitando um portal de documentação e cockpit de aprendizagem SaaS (*Software as a Service*) de elite. Através desta interface, um consultor em formação (*Trainee*) consegue:
+O projeto foi desenhado sob o padrão visual e de governança técnica da **Deloitte**, imitando um portal de documentação e cockpit de aprendizagem SaaS (*Software as a Service*). Através desta interface, um consultor em formação (*Trainee*) consegue:
 1. **Monitorizar o progresso geral** ao longo do *track* de engenharia core.
 2. **Consultar o índice de lições** e navegar através de documentação técnica focada em *Client-Side Scripting*.
 3. **Simular boas práticas** e validar regras de negócio num ambiente interativo de testes (*Sandbox*).
@@ -39,14 +39,10 @@ Para cumprir os requisitos académicos estritos da UpSkill, o projeto foi blinda
 
 ## 🐙 Governação de Código & Boas Práticas de Git/GitHub
 
-O ciclo de desenvolvimento deste portal foi gerido sob metodologias ágeis de controlo de versões, aplicando os standards recomendados pela Deloitte para repositórios corporativos:
+O ciclo de desenvolvimento deste portal foi gerido sob metodologias ágeis de controlo de versões, aplicando os standards recomendados para repositórios corporativos:
 
 *   **Estratégia de Branching (Feature Branches):** A branch `main` foi blindada e mantida como uma cópia estável de produção. Cada componente do portal (como o Header, a Sidebar ou as páginas de lições) nasceu e foi isolado numa branch de funcionalidade dedicada (ex: `feature/homepage-layout`, `feature/licao1-matriz`).
-*   **Mensagens de Commit Semânticas (Conventional Commits):** Para garantir um histórico de código limpo, auditável e legível por qualquer arquiteto da equipa, utilizou-se o padrão internacional de prefixos claros:
-    *   `feat:` Para a introdução de novos componentes ou novas páginas (ex: `feat: add matrix comparative table to lesson 1`).
-    *   `fix:` Para correções cirúrgicas de layout ou aninhamento de tags (ex: `fix: resolve css grid layout break in card links`).
-    *   `style:` Para mudanças puras de design, cores ou identidades que não alteram a lógica (ex: `style: update deloitte branding variables in root`).
-    *   `docs:` Para atualizações e melhorias na documentação técnica do ecossistema (ex: `docs: structure readme with corporate standards`).
+*   **Mensagens de Commit Semânticas (Conventional Commits):** Para garantir um histórico de código limpo, auditável e legível por qualquer arquiteto da equipa, utilizou-se o padrão internacional de prefixos claros.
 *   **Integração Contínua Displiplinada:** Antes de cada fusão (*Merge*), o código foi revisto localmente no Live Server em ambientes simulados de ecrã para anular regressões visuais e conflitos estruturais antes de subir ao GitHub.
 
 ---
