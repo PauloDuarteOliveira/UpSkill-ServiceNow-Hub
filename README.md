@@ -1,63 +1,44 @@
-# 🟢 UpSkill ServiceNow Hub — Trainee Workspace
+<div align="center"> <img src="docs/banner.png" alt="UpSkill ServiceNow Hub: your learning track, in one place." width="100%"> <br>
+<a href="https://pauloduarteoliveira.github.io/UpSkill-ServiceNow-Hub/"><img src="https://img.shields.io/badge/▶_Live_demo-86BC25?style=for-the-badge&logoColor=white" alt="Live demo"></a> <a href="#-screenshots"><img src="https://img.shields.io/badge/Screenshots-1E293B?style=for-the-badge" alt="Screenshots"></a> <a href="#-run-it-locally"><img src="https://img.shields.io/badge/Run_it-1E293B?style=for-the-badge" alt="Run it"></a>
 
-Este repositório contém o projeto prático desenvolvido no âmbito do módulo de **Programação em JavaScript** da **UpSkill ServiceNow (Turma 2026)**.
+<br><br>
 
-O objetivo principal do trabalho consiste na aplicação integrada e consolidação dos conhecimentos adquiridos em aula sobre as fundações de **HTML5** e **CSS3**, simulando um ambiente de desenvolvimento corporativo focado no ecossistema **ServiceNow**.
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"> <img src="https://img.shields.io/badge/frameworks-none-293E40?style=flat-square" alt="No frameworks"> <img src="https://img.shields.io/badge/UPskill-2026-86BC25?style=flat-square" alt="UPskill 2026"> </div> <br>
+A learning portal for ServiceNow trainees. Follow your progress through the track, read the lessons, and try the code in a built-in sandbox, all in hand-written HTML, CSS and JavaScript.
 
----
+Built as the practice project for the JavaScript Programming module of the UPskill ServiceNow programme (2026 class): the goal was to put the HTML5, CSS3 and JavaScript fundamentals together in something that looks and works like a real company tool.
 
-## 🎯 Objetivo & Escopo do Trabalho
+📸 Screenshots
+<p align="center"> <img src="docs/screenshots/dashboard.png" alt="The dashboard: overall progress, summary cards and the module grid" width="100%"> <br><sub><b>Dashboard.</b> Overall progress, summary cards, featured modules and the roadmap.</sub> </p> <table> <tr> <td width="50%"><img src="docs/screenshots/lesson-1.png" alt="Lesson 1: syntax, variables and the var / let / const grid"><br><sub><b>Lesson 1.</b> Syntax, variables and a <code>var</code> / <code>let</code> / <code>const</code> comparison.</sub></td> <td width="50%"><img src="docs/screenshots/lesson-2.png" alt="Lesson 2: the urgency validator sandbox"><br><sub><b>Lesson 2.</b> The DOM, Client Scripts and the urgency validator sandbox.</sub></td> </tr> <tr> <td><img src="docs/screenshots/dashboard-dark.png" alt="The dashboard in dark mode"><br><sub><b>Dark mode.</b> One tap on the moon icon.</sub></td> <td align="center"><img src="docs/screenshots/phone.png" alt="The dashboard on a phone" width="45%"><br><sub><b>On a phone.</b> The layout stacks into one column.</sub></td> </tr> </table>
+✨ Highlights
+<table> <tr> <td width="33%" valign="top"> <h3>🏠 Dashboard</h3> Progress ring, summary cards, featured and completed modules, and what's next on the roadmap. </td> <td width="33%" valign="top"> <h3>📘 Lessons</h3> Two lessons on JavaScript for ServiceNow: the basics (variables, scope, logic) and the DOM with Client Scripts (<code>g_form</code>). </td> <td width="33%" valign="top"> <h3>🧪 Sandbox</h3> Pick a ticket priority and watch the page react: a small, safe place to try dynamic classes. </td> </tr> <tr> <td valign="top"> <h3>🌙 Dark mode</h3> The whole workspace switches colours with a single <code>classList.toggle</code>. </td> <td valign="top"> <h3>👤 CSS-only menu</h3> The profile dropdown opens by click or keyboard with <code>:focus-within</code>, with no JavaScript. </td> <td valign="top"> <h3>🧭 Smart cards</h3> One card, two destinations: the module or straight to the current lesson, using layered links and <code>z-index</code>. </td> </tr> </table>
+🛠 How it's built
+Part	How
+🧱 Structure	Semantic HTML5: <header>, <aside>, <main>, <article>, <footer>
+🎨 Theme	CSS variables in :root for the whole palette: lime #86BC25 on slate #0F172A
+📐 Layout	CSS Grid for the page (fixed 280px sidebar + flexible workspace) and the auto-fitting card grids; Flexbox for headers, buttons and summary cards
+📱 Responsive	Media queries reflow everything for tablets and phones
+✂️ Clean styles	One shared style.css, no inline styles
+⚡ JavaScript	Plain JavaScript, only where it's needed: dark mode and the sandbox
+<details> <summary><b>🐙 How the work was organised with Git</b></summary> <br>
+Feature branches: main always held a working version; each part (header, sidebar, each lesson) was built on its own branch, like feature/homepage-layout or feature/licao1-matriz.
+Conventional Commits: short, clear messages with prefixes such as feat:, fix: and style:.
+Checked before merging: every change was tested with Live Server at different screen sizes before it reached main.
+</details>
+🚀 Run it locally
+git clone https://github.com/PauloDuarteOliveira/UpSkill-ServiceNow-Hub.git
+Open the folder in VS Code, right-click index.html → Open with Live Server. Or simply open index.html in your browser.
 
-O projeto foi desenhado sob o padrão visual e de governança técnica da **Deloitte**, imitando um portal de documentação e cockpit de aprendizagem SaaS (*Software as a Service*). Através desta interface, um consultor em formação (*Trainee*) consegue:
-1. **Monitorizar o progresso geral** ao longo do *track* de engenharia core.
-2. **Consultar o índice de lições** e navegar através de documentação técnica focada em *Client-Side Scripting*.
-3. **Simular boas práticas** e validar regras de negócio num ambiente interativo de testes (*Sandbox*).
+📁 Project structure
+UpSkill-ServiceNow-Hub/
+├── index.html              → Dashboard
+├── js-modulo-licao1.html   → Lesson 1: syntax, variables and logic
+├── js-modulo-licao2.html   → Lesson 2: the DOM, Client Scripts and the sandbox
+├── style.css               → All the styles
+├── assets/                 → Logo and profile pictures
+├── referencias/            → Design references (Google Stitch)
+└── docs/                   → README banner and screenshots
+🎨 Design
+The layout was based on a dashboard designed with Google Stitch; the reference images are in referencias.
 
----
-
-## ⚙️ Arquitetura Técnica & Melhores Práticas Aplicadas
-
-Para cumprir os requisitos académicos estritos da UpSkill, o projeto foi blindado utilizando técnicas modernas de Engenharia Web Core, sem dependência de bibliotecas externas complexas:
-
-*   **Estrutura Semântica Avançada:** Utilização disciplinada de tags HTML5 puras (`<header>`, `<aside>`, `<main>`, `<footer>`, `<article>`) para garantir acessibilidade e SEO técnico.
-*   **Design System Escalável (CSS Variáveis):** Centralização da paleta corporativa (**Verde Deloitte** e tons escuros **ServiceNow Polaris**) através de propriedades `:root`.
-*   **Layout Bidimensional Responsivo (CSS Grid):** Divisão macro do ecrã em formato *Master-Detail* (Sidebar de 280px fixa + Workspace fluído `1fr`), além de grelhas preditivas auto-ajustáveis para os cartões de módulos.
-*   **Alinhamento Unidimensional Preciso (Flexbox):** Organização horizontal de elementos complexos, tais como o cabeçalho global, botões utilitários de ação e os cartões pequenos de sumário (KPIs).
-*   **Separação Estrita de Conceitos:** Todo o design foi centralizado num ficheiro externo unificado (`css/estilo.css`), erradicando a poluição de estilos embutidos (`style=""`).
-*   **Segurança e Resiliência Web:** Integração de *HTML Entities* (`&gt;`, `&lt;`) para formatação segura de *breadcrumbs* e renderização estável de fontes e ícones em modo self-hosted/dinâmico.
-
----
-
-## 🛠️ Funcionalidades de Destaque Desenvolvidas
-
-*   **Navegação Inteligente por Camadas (Workaround CSS):** Implementação de *links fantasma* absolutos combinados com elevação de `z-index`, permitindo que um único cartão físico direcione para dois caminhos lógicos diferentes (Módulo geral vs. Lição ativa atual).
-*   **Interruptor de Modo Escuro Simplificado:** Integração de um gatilho reativo via JavaScript nativo inline (`classList.toggle`) associado ao ícone da lua, aplicando uma inversão cromática uniforme na Sidebar e no Workspace sem desformatar o layout.
-*   **Dropdown de Perfil Dinâmico:** Menu flutuante interativo configurado por clique através da pseudo-classe `:focus-within` associada ao atributo `tabindex="0"`, eliminando a necessidade de scripts pesados de terceiros.
-*   **Matriz Comparativa de Escopos (ES6+):** Grelha técnica responsiva construída em CSS Grid para comparar de forma legível e clara os impactos na memória de `var`, `let` e `const`.
-
----
-
-## 🐙 Governação de Código & Boas Práticas de Git/GitHub
-
-O ciclo de desenvolvimento deste portal foi gerido sob metodologias ágeis de controlo de versões, aplicando os standards recomendados para repositórios corporativos:
-
-*   **Estratégia de Branching (Feature Branches):** A branch `main` foi blindada e mantida como uma cópia estável de produção. Cada componente do portal (como o Header, a Sidebar ou as páginas de lições) nasceu e foi isolado numa branch de funcionalidade dedicada (ex: `feature/homepage-layout`, `feature/licao1-matriz`).
-*   **Mensagens de Commit Semânticas (Conventional Commits):** Para garantir um histórico de código limpo, auditável e legível por qualquer arquiteto da equipa, utilizou-se o padrão internacional de prefixos claros.
-*   **Integração Contínua Displiplinada:** Antes de cada fusão (*Merge*), o código foi revisto localmente no Live Server em ambientes simulados de ecrã para anular regressões visuais e conflitos estruturais antes de subir ao GitHub.
-
----
-
-## 🚀 Como Executar o Projeto Localmente
-
-1. Garanta que tem a extensão **Live Server** instalada no seu VS Code.
-2. Clone este repositório para a sua máquina local.
-3. Clique com o botão direito do rato no ficheiro `index.html` e selecione **"Open with Live Server"**.
-4. Explore a transição fluída entre o Dashboard principal e o ecossistema de lições clicando nos botões ou cartões ativos.
-
----
-
-## 📚 Referências Visuais & Créditos
-
-O design system e o alinhamento estético deste workspace foram baseados nas diretivas e componentes estruturais do **Google Stitch**, garantindo uma interface polida, moderna e focada em produtividade SaaS.
-
-*   **Projeto de Referência:** [Google Stitch - Dashboard Project](https://stitch.withgoogle.com/projects/16635127389998481073)
+<br> <div align="center"> <img src="assets/Logo-Hub.png" alt="UpSkill ServiceNow Hub logo" height="48"> <br> <sub>Made for the UPskill ServiceNow programme by <a href="https://github.com/PauloDuarteOliveira"><b>Paulo Duarte Oliveira</b></a> · 2026</sub> </div>
